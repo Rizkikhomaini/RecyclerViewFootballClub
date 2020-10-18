@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Detail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Player"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/comforta"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/imgdetail"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/namadetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgdetail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            tools:text="Nama Pemain"
+            android:fontFamily="@font/comforta"/>
+        <TextView
+            android:id="@+id/posisidetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgdetail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/namadetail"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            tools:text="Posisi"
+            android:fontFamily="@font/comforta"/>
+        <TextView
+            android:id="@+id/nationdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/posisidetail"
+            android:layout_toRightOf="@id/imgdetail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            tools:text="Negara"
+            android:fontFamily="@font/comforta"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Design by : Rizki Ar Khomaini"
+        android:textSize="10sp"
+        android:textColor="#000"
+        android:fontFamily="@font/comforta"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</RelativeLayout>
